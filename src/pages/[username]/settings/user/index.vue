@@ -10,7 +10,7 @@
             <IonItemGroup>
                 <IonList inset>
                     <IonItem lines="none" button @click="logoutButton()">
-                        <IonLabel> Çıkış Yap</IonLabel>
+                        <IonLabel>Logout Button</IonLabel>
                     </IonItem>
                 </IonList>
             </IonItemGroup>
