@@ -7,13 +7,13 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
-    HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
-    IonApp: typeof import('@ionic/vue')['IonApp']
+    HelloWorld: typeof import('./components/HelloWorld.vue')['default']
+    IonButton: typeof import('@ionic/vue')['IonButton']
+    IonContent: typeof import('@ionic/vue')['IonContent']
+    IonHeader: typeof import('@ionic/vue')['IonHeader']
     IonPage: typeof import('@ionic/vue')['IonPage']
-    IonRouterOutlet: typeof import('@ionic/vue')['IonRouterOutlet']
-    IonTabBar: typeof import('@ionic/vue')['IonTabBar']
-    IonTabButton: typeof import('@ionic/vue')['IonTabButton']
-    IonTabs: typeof import('@ionic/vue')['IonTabs']
+    IonTitle: typeof import('@ionic/vue')['IonTitle']
+    IonToolbar: typeof import('@ionic/vue')['IonToolbar']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }
