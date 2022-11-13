@@ -6,7 +6,7 @@
         </IonToolbar>
     </IonHeader>
     <IonContent>
-        <IonButton @click="router.push('/ddhello/home')">Next Home</IonButton>
+        <IonButton @click="router.push('/auth/check')">Check</IonButton>
     </IonContent>
  </IonPage>
 </template>
