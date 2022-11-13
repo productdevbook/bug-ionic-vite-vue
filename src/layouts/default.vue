@@ -1,6 +1,12 @@
 <script setup lang="ts">
 import { IonPage, IonRouterOutlet, IonTabBar, IonTabButton, IonTabs } from '@ionic/vue';
-
+const router = useRouter();
+const isTab = computed(() => {
+  return (
+    router.currentRoute.value.meta.option &&
+    router.currentRoute.value.meta.option === 'tabs'
+  )
+})
 
 </script>
 
@@ -9,20 +15,18 @@ import { IonPage, IonRouterOutlet, IonTabBar, IonTabButton, IonTabs } from '@ion
     <IonTabs>
       <IonRouterOutlet />
       <IonTabBar
+        v-if="isTab"
         slot="bottom"
         class="border-t dark:border-[color:var(--ion-color-step-100)]"
       >
-        <IonTabButton tab="home" :href="`/tab1`">
+        <IonTabButton tab="home" :href="`/ddhello/home`">
          <div>home1</div>
         </IonTabButton>
 
-        <IonTabButton tab="statistics" :href="`/tab2`">
+        <IonTabButton tab="statistics" :href="`/ddhello/settings`">
             <div>home1</div>
         </IonTabButton>
 
-        <IonTabButton tab="settings" :href="`/tab3`">
-            <div>home1</div>
-        </IonTabButton>
       </IonTabBar>
     </IonTabs>
   </IonPage>

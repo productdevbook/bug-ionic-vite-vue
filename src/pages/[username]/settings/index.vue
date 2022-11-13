@@ -2,11 +2,11 @@
     <IonPage>
         <IonHeader>
             <IonToolbar>
-                <IonTitle>Username</IonTitle>
+                <IonTitle>Settings</IonTitle>
             </IonToolbar>
         </IonHeader>
         <IonContent>
-            <IonButton @click="router.push('/ddhello/settings')">Go Settings</IonButton>
+            <IonButton @click="router.push('/ddhello/settings/user')">Go User Profile Settings</IonButton>
         </IonContent>
     </IonPage>
 </template>

@@ -2,11 +2,11 @@
  <IonPage>
     <IonHeader>
         <IonToolbar>
-            <IonTitle>Onboarding</IonTitle>
+            <IonTitle>Anasayfa</IonTitle>
         </IonToolbar>
     </IonHeader>
     <IonContent>
-        <IonButton @click="router.push('/ddhello/home')">Next Home</IonButton>
+        <IonButton @click="router.push('/asdasdas')">Next Settings</IonButton>
     </IonContent>
  </IonPage>
 </template>
