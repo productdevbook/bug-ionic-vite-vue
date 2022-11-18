@@ -1,5 +1,0 @@
-<template>
-  <IonRouterOutlet />
-</template>
-
-

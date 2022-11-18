@@ -23,5 +23,8 @@ export default defineConfig({
       imports: ['vue-router', 'vue'], dts: './src/auto-imports.d.ts',
   }),
 
-  ]
+  ],
+  build: {
+    target: 'esnext',
+  }
 })
